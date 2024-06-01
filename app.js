@@ -73,6 +73,7 @@ app.post("/DoctorSearch/Login_verification", async (req, resp) => {
     resp.send("incorrect details please provide wright details");
   }
 });
+console.log("hello");
 
 
 const PORT =process.env.PORT||3000;
