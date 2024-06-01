@@ -75,8 +75,8 @@ app.post("/DoctorSearch/Login_verification", async (req, resp) => {
 });
 
 
+const PORT =process.env.PORT||3000;
 
-
-http.listen(3000, () => {
-  console.log("http port 3000 connected ");
+http.listen(PORT, () => {
+  console.log("http port ${PORT}connected ");
 });
