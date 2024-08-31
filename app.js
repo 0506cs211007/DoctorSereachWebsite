@@ -7,7 +7,7 @@ require("./db_connecction");
 const path = require("path");
 // global.window={};
 const Listings = require("./DB_model/Doctor_Listing");
-//  const LoginData = require("./DB_model/LoginData");
+ const LoginData = require("./DB_model/LoginData");
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
