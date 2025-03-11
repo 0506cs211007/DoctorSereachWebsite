@@ -49,7 +49,7 @@ app.post("/DoctorSearch/SignUp_verification", async (req, resp) => {
   let formData = req.body;
   let data = await LoginData.insertMany([formData]);
   console.log("this data is by sign up  form ", data);
-  resp.redirect("/DoctorSearch");
+  resp.redirect("/");
 });
 
 app.post("/DoctorSearch/Login_verification", async (req, resp) => {
@@ -61,11 +61,11 @@ app.post("/DoctorSearch/Login_verification", async (req, resp) => {
       
    
 
-      resp.redirect("/DoctorSearch");
+      resp.redirect("/");
     } else{
       // resp.redirect("/renterhub/about");
        resp.send("can't login ,please provide wright details");
-      resp.redirect("/DoctorSearch");
+      resp.redirect("/");
     }
   } catch {
     // resp.redirect("/renterhub");
