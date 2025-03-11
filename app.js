@@ -16,9 +16,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", async (req, resp) => {
-  // const data = await Listings.find({});
-  // resp.render("Home.ejs",{ data });
- resp.status(200).json({message:"data found "});
+  const data = await Listings.find({});
+  resp.render("Home.ejs",{ data });
+ // resp.status(200).json({message:"data found "});
 });
 
 
