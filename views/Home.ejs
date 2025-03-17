@@ -467,6 +467,11 @@
     <script>
       const  data = <%- JSON.stringify(data) %>;
       function SearchByName(){
+
+fetch('services.ejs')
+    .then(response => response.text())
+    .then(data =>console.log("web data is :",data));
+
         let input1=document.getElementById("SearchByName");
 
 let val=input1.value.toLowerCase();
