@@ -469,9 +469,9 @@
       function SearchByName(){
         let input1=document.getElementById("SearchByName");
 
-let val=input1.value;
+let val=input1.value.toLowerCase();
         for(let i=0;i<data.length;i++){
-          if(data[i].name==val){
+          if(data[i].name.toLowerCase()===val){
             let Infobox=document.getElementById("docInfo");
             Infobox.style.display="block";
             document.getElementById("docImg").src=data[i].imageUrl;
@@ -487,9 +487,9 @@ let val=input1.value;
       function SearchBySpecili(){
         let input2=document.getElementById("SearchBySpecili");
 
-let val=input2.value;
+let val=input2.value.toLowerCase();
         for(let i=0;i<data.length;i++){
-          if(data[i].specialization==val){
+          if(data[i].specialization.toLowerCase()===val){
             let Infobox=document.getElementById("docInfo");
             Infobox.style.display="block";
             document.getElementById("docImg").src=data[i].imageUrl;
